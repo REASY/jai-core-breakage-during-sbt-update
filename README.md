@@ -1,0 +1,1 @@
+# An example when updating to SBT from 1.9.2 to 1.9.5 breaks building
