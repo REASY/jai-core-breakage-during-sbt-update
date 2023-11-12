@@ -16,9 +16,9 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "org.geotools" % "gt-main" % gt,
-  "org.geotools" % "gt-epsg-wkt" % gt,
-  "org.geotools" % "gt-referencing" % gt,
+  ("org.geotools" % "gt-main" % gt).excludeAll(ExclusionRule("javax.media", "jai_core")),
+  ("org.geotools" % "gt-epsg-wkt" % gt).excludeAll(ExclusionRule("javax.media", "jai_core")),
+  ("org.geotools" % "gt-referencing" % gt).excludeAll(ExclusionRule("javax.media", "jai_core")),
 )
 
 
